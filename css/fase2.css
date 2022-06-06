@@ -1,0 +1,131 @@
+.fase2 {
+    margin-left: 0px 20px 0px ;
+}
+
+
+
+section .segundosvg{
+    color: #6f57ed;
+    border: transparent;
+    display: block;
+    text-align: center;
+    width: 300px;
+}
+
+section .legenda{
+    display: block;
+    font-size: 20px;
+    
+    
+}
+
+.carrossel{
+    width: 300px;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+}
+
+.carrossel .imagensdobotao {
+    width: 400%;
+    animation-name: animacao;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    display: flex;
+    animation: animacao 20s infinite ease-in-out;
+}
+
+.carrossel .imagensdobotao .segundosvg {
+    width: 300px;
+    overflow: hidden;
+    display: block;
+    position: relative;
+}
+    
+ .botao {
+    position: absolute;
+    top: 6%;
+    z-index: 1000;
+    background: none;
+    font-size: 40pt;
+    color: #6f57ed;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
+    outline: none;
+    border: none;
+ }
+
+ .botao.botao1 {
+    left: 4px;
+ }
+
+ .botao.botao2 {
+   right: 4px;
+ }
+
+ @keyframes animacao {
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+    75% {margin-left: -300%;}
+    95% {margin-left: -300%;}
+    100% {margin-left: -400%;}
+
+
+ }
+
+@media (min-width: 1024px) {
+    .fase2 {
+        position: relative;
+    }
+    
+    .imagensdobotao{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: auto;        
+    }
+
+    .svgf2 {
+        margin-bottom: 33px;
+    }
+
+    
+    .fase2 .segundosvg .legenda {
+        max-width: 226px;
+        text-align: center;
+    }
+
+    .carrossel {
+        width: 100%;
+        position: relative;
+    }
+
+    .carrossel .imagensdobotao{
+    width: 100%;
+    animation-name: none;
+    display: flex;
+    justify-content: space-around;
+    }
+
+    
+
+    .carrossel .imagensdobotao .segundosvg {
+        position: static;
+        display: block;
+        margin: 0px 4%;
+    }
+
+    .botao {
+        display: none;
+    }
+
+    .carrossel .imagensdobotao .svginvi {
+        display: none;
+        visibility: hidden;
+        
+    }
+
+}
